@@ -1,0 +1,33 @@
+[Desktop Entry]
+Name=Waydroid KDE Manager
+GenericName=Quản lý Waydroid
+GenericName[vi]=Quản lý Waydroid
+Comment=Quản lý phiên, tắt mở và tùy biến cửa sổ Waydroid trên KDE Plasma
+Comment[vi]=Quản lý phiên, tắt mở và tùy biến cửa sổ Waydroid trên KDE Plasma
+Exec=/run/media/daiphuc/DATA/Projects/Waydroid-Wayland/waydroid-kde gui
+Icon=/run/media/daiphuc/DATA/Projects/Waydroid-Wayland/waydroid_kde/assets/waydroid-kde.png
+Terminal=false
+Type=Application
+Categories=Utility;System;Settings;
+Keywords=waydroid;android;kde;plasma;kwin;emulator;session;window;
+Actions=StartMulti;StartFull;StopSession;CleanSession;
+
+[Desktop Action StartMulti]
+Name=Khởi động Multi-Window
+Exec=/run/media/daiphuc/DATA/Projects/Waydroid-Wayland/waydroid-kde start --mode multi_windows
+Icon=media-playback-start
+
+[Desktop Action StartFull]
+Name=Mở Cửa sổ Full UI
+Exec=/run/media/daiphuc/DATA/Projects/Waydroid-Wayland/waydroid-kde start --mode full_ui
+Icon=smartphone
+
+[Desktop Action StopSession]
+Name=Tắt Waydroid Session
+Exec=/run/media/daiphuc/DATA/Projects/Waydroid-Wayland/waydroid-kde stop
+Icon=media-playback-stop
+
+[Desktop Action CleanSession]
+Name=Dọn dẹp Session (Clean)
+Exec=/run/media/daiphuc/DATA/Projects/Waydroid-Wayland/waydroid-kde clean
+Icon=edit-clear-all
